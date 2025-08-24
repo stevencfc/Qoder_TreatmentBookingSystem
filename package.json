@@ -1,0 +1,38 @@
+{
+  "name": "treatment-booking-system",
+  "version": "1.0.0",
+  "description": "OpenAPI-driven B2B SaaS platform for treatment facility appointment scheduling",
+  "main": "backend/src/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "start": "cd backend && npm start",
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "db:migrate": "cd backend && npm run db:migrate",
+    "db:seed": "cd backend && npm run db:seed"
+  },
+  "keywords": [
+    "booking-system",
+    "treatment",
+    "appointment",
+    "api",
+    "saas",
+    "openapi"
+  ],
+  "author": "Product Management Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
