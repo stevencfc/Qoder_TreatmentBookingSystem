@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import BookingCalendar from '../components/BookingCalendar'
+import { BookingCalendar, QuickActions } from '../components/CalendarComponents'
 import BookingList from '../components/BookingList'
 import StatsCards from '../components/StatsCards'
-import QuickActions from '../components/QuickActions'
 
 const Dashboard = () => {
   const [selectedDate, setSelectedDate] = useState(new Date())
